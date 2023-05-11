@@ -1,4 +1,5 @@
 import './Home.css';
+import PageBackground from '../PageBackground/PageBackground';
 
 const Home = () => {
     return (
@@ -7,10 +8,7 @@ const Home = () => {
                 Go Anywhere Your Heart Desires
             </div>
 
-            <div className='page-background-container'>
-                <div className='page-background-filter'></div>
-                <img src='./Assets/Images/road.jpg' className='page-background'/>
-            </div>
+            <PageBackground backgroundPath='./Assets/Images/road.jpg' />
         </div>
     )
 }

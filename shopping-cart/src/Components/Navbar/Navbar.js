@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const ROOT_DOMAIN = 'http://localhost:3000'
@@ -14,23 +15,23 @@ const Navbar = () => {
 
             <div className='navbar-buttons-container'>
                 <div className='navbar-button home-page-button'>     
-                    <a className='navbar-button-link' href={`${ROOT_DOMAIN}/`}> Home </a> 
+                    <Link to='/' className='navbar-button-link'> Home </Link>
                 </div>
 
                 <div className='navbar-button products-page-button'> 
-                    <a className='navbar-button-link' href={`${ROOT_DOMAIN}/products/`}> Products </a> 
+                    <Link to='/products/' className='navbar-button-link'> Products </Link>
                 </div>
 
                 <div className='navbar-button about-us-page-button'> 
-                    <a className='navbar-button-link' href={`${ROOT_DOMAIN}/about-us/`}> About Us </a> 
+                    <Link to='/about-us/' className='navbar-button-link'> About Us </Link>
                 </div>
 
                 <div className='navbar-button contact-page-button'>  
-                    <a className='navbar-button-link' href={`${ROOT_DOMAIN}/contact/`}> Contact </a> 
+                    <Link to='/contact/' className='navbar-button-link'> Contact </Link>
                 </div>
 
                 <div className='navbar-button cart-page-button'>     
-                    <a className='navbar-button-link' href={`${ROOT_DOMAIN}/cart/`}> Cart </a> 
+                    <Link to='/cart/' className='navbar-button-link'> Cart </Link>
                 </div>
             </div>
         </div>

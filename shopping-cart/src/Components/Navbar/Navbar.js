@@ -1,7 +1,5 @@
-import { Link } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 import './Navbar.css';
-
-const ROOT_DOMAIN = 'http://localhost:3000'
 
 const Navbar = () => {
     return (

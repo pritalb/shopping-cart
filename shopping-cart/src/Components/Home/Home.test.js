@@ -3,7 +3,7 @@ import Home from './Home';
 
 describe("Home Component renders correctly", () => {
     test("Home has a Heading", () => {
-        const {container} = render(<Home />);
+        const { container } = render(<Home />);
 
         expect(container.querySelector('.home-page-heading')).toBeInTheDocument();
     });

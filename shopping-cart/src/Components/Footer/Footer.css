@@ -1,12 +1,14 @@
 .footer {
+    --padding: 30px;
+
     position: absolute;
     display: flex;
     flex-direction: row;
     bottom: 0;
     height: 60px;
-    width: 96%;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: calc(100vw - calc(2 * var(--padding)));
+    padding-left: var(--padding);
+    padding-right: var(--padding);
     background-color: black;
     color: white;
     align-items: center;

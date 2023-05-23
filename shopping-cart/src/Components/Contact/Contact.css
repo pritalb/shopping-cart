@@ -4,9 +4,8 @@
     height: 90vh;
     justify-content: center;
     color: #FFFFFF;
-    padding-left: 50px;
+    padding-left: 2.5%;
     gap: 20px;
-    /* padding-right: 50px; */
 }
 
 .heading {
@@ -16,7 +15,7 @@
 .contacts-container {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 95vw;
     justify-content: start;
     gap: 3%;
 }
@@ -40,7 +39,6 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
-    margin-top: 10px;
 }
 
 .contact-button {

@@ -4,7 +4,7 @@ import Navbar from '../Navbar/Navbar.js';
 import Footer from '../Footer/Footer.js';
 import PageBackground from '../PageBackground/PageBackground.js';
 
-const Products = () => {
+const Products = ({addToCart}) => {
     const [productsArray, setProductsArray] = useState([
         {
             name: 'Venom',
@@ -76,7 +76,7 @@ const Products = () => {
                             {productsArray[currentProductIndex].model}
                         </div>
                     </div>
-                    <button className='product-buy-button'> Buy </button>
+                    <button className='product-buy-button' onClick={() => addToCart(productsArray[currentProductIndex])}> Buy </button>
                 </div>
 
                 <div className='product-navigation'>

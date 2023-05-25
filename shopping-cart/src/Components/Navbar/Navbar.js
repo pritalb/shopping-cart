@@ -1,7 +1,10 @@
 import { Link, } from 'react-router-dom';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({cartProduct}) => {
+    const cartLength = Object.keys(cartProduct).length;
+    const objectInCart = (cartLength !== 0);
+
     return (
         <div className='navbar'>
             <div className='logo-container'>
@@ -28,8 +31,11 @@ const Navbar = () => {
                     <Link to='/contact/' className='navbar-button-link'> Contact </Link>
                 </div>
 
-                <div className='navbar-button cart-page-button'>     
+                <div className='navbar-button cart-page-button'>
                     <Link to='/cart/' className='navbar-button-link'> Cart </Link>
+                    {
+                        objectInCart && <div className='navbar-cart-length'> ! </div>
+                    }  
                 </div>
             </div>
         </div>

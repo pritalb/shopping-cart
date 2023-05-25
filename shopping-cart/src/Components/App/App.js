@@ -11,18 +11,20 @@ import { useState } from 'react';
 
 function App() {
   const [cartProduct, setCartProduct] = useState({});
-
-  const addToCart = (product) => {
-    setCartProduct(product);
-  }
-
+  
   const emptyCart = () => {
     setCartProduct({});
   }
+  
+  const addToCart = (product) => {
+    emptyCart();
+    setCartProduct(product);
+  }
+
 
   return (
       <div>
-        <Navbar />
+        <Navbar cartProduct={cartProduct}/>
         <Footer />
 
         <Routes>

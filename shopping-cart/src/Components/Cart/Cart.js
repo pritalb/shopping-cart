@@ -1,6 +1,4 @@
 import './Cart.css';
-import Navbar from '../Navbar/Navbar.js';
-import Footer from '../Footer/Footer.js';
 import PageBackground from '../PageBackground/PageBackground.js';
 
 const Cart = ({product, emptyCart}) => {
@@ -8,9 +6,7 @@ const Cart = ({product, emptyCart}) => {
 
     return (
         <div className='cart-page'>
-            <Navbar />
             <PageBackground backgroundPath='./Assets/Images/logobg.png' />
-            <Footer />
 
             <div className='cart-heading'> Cart </div>
 

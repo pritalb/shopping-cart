@@ -1,14 +1,10 @@
 import './AboutUs.css';
-import Navbar from '../Navbar/Navbar.js';
-import Footer from '../Footer/Footer.js';
 import PageBackground from '../PageBackground/PageBackground.js';
 
 const AboutUs = () => {
     return (
         <div className='about-us-page'>
-            <Navbar />
             <PageBackground backgroundPath='./Assets/Images/worker.jpeg' />
-            <Footer />
 
             <div className='about-us-container'>
                 <div className='about-us-slogan'>

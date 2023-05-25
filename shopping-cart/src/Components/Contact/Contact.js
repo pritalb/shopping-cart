@@ -1,14 +1,10 @@
 import './Contact.css';
-import Navbar from '../Navbar/Navbar.js';
-import Footer from '../Footer/Footer.js';
 import PageBackground from '../PageBackground/PageBackground.js';
 
 const ContactPage = () => {
     return (
         <div className='contacts-page'>
-            <Navbar />
             <PageBackground backgroundPath='./Assets/Images/logobg.png' />
-            <Footer />
 
             <div className='main-container'>
                 <div className='heading'>

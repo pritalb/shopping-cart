@@ -1,7 +1,5 @@
 import { useState, } from 'react';
 import './Products.css';
-import Navbar from '../Navbar/Navbar.js';
-import Footer from '../Footer/Footer.js';
 import PageBackground from '../PageBackground/PageBackground.js';
 
 const Products = ({addToCart}) => {
@@ -62,9 +60,7 @@ const Products = ({addToCart}) => {
 
     return (
         <div className='product-page'>
-            <Navbar />
             <PageBackground backgroundPath={productsArray[currentProductIndex].image} />
-            <Footer />
 
             <div className='product-info'>
                 <div className='product-container'>

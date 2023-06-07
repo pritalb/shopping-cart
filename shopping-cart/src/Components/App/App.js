@@ -9,6 +9,12 @@ import ContactPage from '../Contact/Contact.js';
 import Cart from '../Cart/Cart.js';
 import { useState } from 'react';
 
+/* 
+ add this to package.json before pushing to repo
+ 
+ "homepage": "https://pritalb.github.io/shopping-cart"
+*/
+
 function App() {
   const [cartProduct, setCartProduct] = useState({});
   

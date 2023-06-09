@@ -10,9 +10,9 @@ const Footer = () => {
                 <div className="footer-link"> News </div>
             </div>
             <div className="footer-languages">
-                <div> English </div>
+                <div className="footer-language"> English </div>
                 <div className="separator"></div>
-                <div> French </div>
+                <div className="footer-language"> French </div>
             </div>
         </div>
     );

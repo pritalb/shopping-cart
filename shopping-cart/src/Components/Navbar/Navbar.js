@@ -40,14 +40,13 @@ const Navbar = ({cartProduct}) => {
     const handleShowNavButtons = () => {
         if (!showNavButtons) {
             setShowNavButtons(true);
-            console.log('show nav set to true')
+            // console.log('show nav set to true')
         };
 
         let screenWidth = window.screen.availWidth;
         if (screenWidth <= 750) {
             setShowNavButtons(false);
-            console.log('show nav set to false')
-
+            // console.log('show nav set to false')
         }
     }
 

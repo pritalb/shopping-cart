@@ -1,11 +1,11 @@
 .footer {
-    --padding: 30px;
+    --padding: 1.8rem;
 
     position: absolute;
     display: flex;
     flex-direction: row;
     bottom: 0;
-    height: 60px;
+    height: 4rem;
     width: calc(100vw - calc(2 * var(--padding)));
     padding-left: var(--padding);
     padding-right: var(--padding);
@@ -19,17 +19,36 @@
 .footer-links {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .footer-languages {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .separator {
     background-color: white;
-    height: 20px;
-    width: 1px;
+    height: 1.6rem;
+    width: 0.1rem;
+}
+
+.footer-language {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+    .footer {
+        font-size: 0.8rem;
+    }
+
+    .footer-links {
+        gap: 0.8rem;
+    }
+
+    .footer-languages {
+        gap: 0.8rem;
+    }
 }

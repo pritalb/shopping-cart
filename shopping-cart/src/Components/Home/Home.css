@@ -17,8 +17,10 @@
 
 @media screen and (max-width: 750px) {
     .home-page-heading {
-        font-size: 2rem;
-        padding-left: 1rem;
+        font-size: 1.5rem;
+        /* padding-left: 1rem; */
         text-align: center;
+        width: 80%;
+        align-self: center;
     }
 }

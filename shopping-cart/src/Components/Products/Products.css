@@ -1,6 +1,6 @@
 .product-page {
-    --button-size: 24px;
-    --circle-size: 16px;
+    --button-size: 1.5rem;
+    --circle-size: 1rem;
     --container-width: 350px;
     --main-color: #FFFFFF;
     --accent-color: #6934FF;
@@ -11,24 +11,24 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 25px;
+    gap: 1.5rem;
 }
 
 .product-info {
     display: flex;
     position: absolute;
-    bottom: 10vh;
+    bottom: 10%;
     flex-direction: column;
     color: var(--main-color);
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .product-buy-button {
-    width: 80px;
-    height: 40px;
+    width: 6rem;
+    height: 2.5rem;
     font-size: 1.75rem;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     border: none;
     background-color: var(--accent-color);
     color: var(--main-color);
@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    gap: 10px;
+    gap: 0.6rem;
 }
 
 .product-name {
@@ -51,12 +51,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
 .product-navigation-button {
-    width: calc(var(--button-size) + 8px);
-    height: calc(var(--button-size) + 8px);
+    width: calc(var(--button-size) + 0.5rem);
+    height: calc(var(--button-size) + 0.5rem);
     background-color: transparent;
     border: none;
 }
@@ -77,15 +77,46 @@
     background-color: var(--main-color);
     height: var(--circle-size);
     width: var(--circle-size);
-    border-radius: 50px;
+    border-radius: 3rem;
 }
 
 .circles-container {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 0.8rem;
 }
 
 .current-circle {
     background-color: var(--accent-color) !important;
+}
+
+@media screen and (max-width: 750px) {
+    .product-page {
+        --button-size: 1rem;
+        --circle-size: 0.7rem;    
+    }
+
+    .product-info {
+        padding-left: 1rem;
+        width: calc(100% - 1rem);
+    }
+
+    .product-name-container {
+        font-size: 1.75rem;
+    }
+
+    .product-container {
+        gap: 1rem;
+    }
+
+    .product-buy-button {
+        width: 4rem;
+        height: 1.6rem;
+        font-size: 1rem;
+        border-radius: 1rem;
+    }
+
+    .product-navigation {
+        gap: 1rem;
+    }
 }

@@ -15,17 +15,17 @@ const Cart = ({product, emptyCart}) => {
                     ?
                         <div className='cart-empty-message'> Nothing added to Cart yet </div>
                     :
-                <div className='cart-container'>
-                    <div className='cart-image-container'>
-                        <img className='cart-image' src={product.image} />
-                    </div>
-                    <div className='cart-product-info'>
-                        <div className='cart-product-name'> {product.name} {product.model} </div>
-                        <div className='cart-product-price'> Price: ${product.price}/- </div>
-                        <button className='cart-product-remove-button' onClick={() => emptyCart()}> Remove from Cart </button>
-                        <button className='cart-product-button' onClick={() => alert('Thanks for buying')}> Proceed to Checkout </button>
-                    </div>
-                </div>
+                        <div className='cart-container'>
+                            <div className='cart-image-container'>
+                                <img className='cart-image' src={product.image} />
+                            </div>
+                            <div className='cart-product-info'>
+                                <div className='cart-product-name'> {product.name} {product.model} </div>
+                                <div className='cart-product-price'> Price: ${product.price}/- </div>
+                                <button className='cart-product-remove-button' onClick={() => emptyCart()}> Remove from Cart </button>
+                                <button className='cart-product-button' onClick={() => alert('Thanks for buying')}> Proceed to Checkout </button>
+                            </div>
+                        </div>
             }
         </div>
     );

@@ -5,7 +5,7 @@
     justify-content: center;
     color: #FFFFFF;
     padding-left: 2.5%;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
 .heading {
@@ -15,8 +15,8 @@
 .contacts-container {
     display: flex;
     flex-direction: row;
-    width: 95vw;
-    justify-content: start;
+    width: 95%;
+    justify-content: flex-start;
     gap: 3%;
 }
 
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     width: 30%;
-    gap: 10px;
+    gap: 0.8rem;
 }
 
 .contact-heading {
@@ -38,12 +38,12 @@
 .contact-buttons-container {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 1.5rem;
 }
 
 .contact-button {
-    height: 30px;
-    width: 60px;
+    height: 2rem;
+    width: 4rem;
     border-style: none;
     color: #FFFFFF;
     background-color: #6934FF;
@@ -51,4 +51,15 @@
 
 .contact-email {
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 750px) {
+    .contacts-container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .contact {
+        width: 95%;
+    }
 }
